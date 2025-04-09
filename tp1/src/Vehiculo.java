@@ -13,22 +13,15 @@ public class Vehiculo {
         this.capacidadCargaKg = capacidadCargaKg;
     }
 
-    // Getters y setters
+    // Getters
     public String getPatente() { return patente; }
     public String getMarca() { return marca; }
     public int getAño() { return año; }
     public double getCapacidadCargaKg() { return capacidadCargaKg; }
 
+    // Setters (opcional, los incluyo por completitud)
     public void setPatente(String patente) { this.patente = patente; }
     public void setMarca(String marca) { this.marca = marca; }
     public void setAño(int año) { this.año = año; }
     public void setCapacidadCargaKg(double capacidadCargaKg) { this.capacidadCargaKg = capacidadCargaKg; }
-
-    // Método para mostrar información
-    public void mostrarInfo() {
-        System.out.println("Patente: " + patente);
-        System.out.println("Marca: " + marca);
-        System.out.println("Año: " + año);
-        System.out.println("Capacidad de carga: " + capacidadCargaKg + " kg");
-    }
 }
