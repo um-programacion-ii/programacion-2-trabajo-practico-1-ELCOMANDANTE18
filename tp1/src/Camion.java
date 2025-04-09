@@ -11,7 +11,8 @@ public class Camion extends Vehiculo {
         return tieneAcoplado;
     }
 
-    public void setTieneAcoplado(boolean tieneAcoplado) {
-        this.tieneAcoplado = tieneAcoplado;
+    @Override
+    public void imprimir(VehiculoPrinter printer) {
+        printer.imprimirInfoCamion(this);
     }
 }
