@@ -12,7 +12,12 @@ public class VehiculoPrinter {
     }
 
     public void imprimirInfoCamion(Camion camion) {
-        imprimirInfoVehiculo(camion); // Imprime la información básica del vehículo
+        imprimirInfoVehiculo(camion);
         System.out.println("¿Tiene acoplado? " + (camion.tieneAcoplado() ? "Sí" : "No"));
+    }
+
+    public void imprimirInfoAuto(Auto auto) {
+        imprimirInfoVehiculo(auto);
+        System.out.println("Cantidad de pasajeros: " + auto.getCantidadPasajeros());
     }
 }
